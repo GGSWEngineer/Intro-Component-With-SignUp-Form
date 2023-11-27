@@ -1,0 +1,87 @@
+:root {
+  --bg-color: #ff7979;
+  --btn-primary-color: #38cc8b;
+  --btn-secondary-color: #5e54a4;
+  --final-color: #3d3b48;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 375px;
+  height: 1000px;
+  margin: auto;
+  position: relative;
+  background-color: var(--bg-color); /* Set your desired background color */
+  color: #fff; /* Set your desired text color */
+  padding: 5.5rem 1.5rem 4.25rem;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("images/bg-intro-mobile.png") center center/cover; /* Set the path to your faint image */
+  opacity: 0.75; /* Adjust the opacity to control the overlay intensity */
+}
+
+main {
+  text-align: center;
+}
+
+.text-container h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.25rem; /* 128.571% */
+  letter-spacing: -0.01825rem;
+  margin-bottom: 1rem;
+}
+
+.text-container p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.625rem; /* 162.5% */
+  margin-bottom: 4rem;
+}
+
+.form-n-btns .special {
+  position: relative;
+  width: 100%;
+  padding: 1.12em 4.16em;
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.625rem; /* 173.333% */
+  letter-spacing: 0.01675rem;
+  border-radius: 0.625rem;
+  background-color: var(--btn-secondary-color);
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.form-n-btns .special span {
+  font-weight: 700;
+}
+
+.form-n-btns .special::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--btn-secondary-color);
+  z-index: -1; /* Place the background behind the button text */
+}
