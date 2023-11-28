@@ -10,6 +10,7 @@
   padding: 0;
   font-family: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 body {
@@ -69,6 +70,12 @@ main {
   background-color: var(--btn-secondary-color);
   box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
   border: none;
+  margin-bottom: 1.5rem;
+}
+
+.form-n-btns .special:hover,
+#form button:hover {
+  cursor: pointer;
 }
 
 .form-n-btns .special span {
@@ -84,4 +91,113 @@ main {
   left: 0;
   background-color: var(--btn-secondary-color);
   z-index: -1; /* Place the background behind the button text */
+}
+
+#form {
+  border-radius: 0.625rem;
+  background: #fff;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+}
+
+#form input {
+  width: 100%;
+  height: 56px;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  background: #fff;
+  color: #3d3b48;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.625rem; /* 185.714% */
+  letter-spacing: 0.01563rem;
+  padding: 0.94rem 0rem 0.94rem 1.21rem;
+  margin-bottom: 1rem;
+  position: relative;
+  /* z-index: 0; */
+}
+
+#form button {
+  border-radius: 0.3125rem;
+  background: var(--btn-primary-color);
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+  width: 100%;
+  padding: 0.94rem 0;
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.625rem; /* 173.333% */
+  letter-spacing: 0.0625rem;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+#form p {
+  width: 249px;
+}
+
+#form p,
+#form p span {
+  color: #bab7d4;
+  font-family: Poppins;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 1.3125rem; /* 190.909% */
+}
+
+#form p span {
+  color: #ff7979;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 1440px;
+    height: 800px;
+    padding: 7.56rem 10.31rem 7.56rem;
+  }
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("images/bg-intro-desktop.png") center center/cover; /* Set the path to your faint image */
+    opacity: 0.75; /* Adjust the opacity to control the overlay intensity */
+  }
+  main {
+    display: flex;
+    column-gap: 2.81rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-container {
+    text-align: start;
+  }
+
+  .text-container h1 {
+    font-size: 3.125rem;
+    line-height: 3.4375rem; /* 110% */
+    letter-spacing: -0.03256rem;
+    margin-bottom: 0.69rem;
+    height: 131px;
+  }
+
+  #form {
+    width: 540px;
+    height: 474px;
+    padding: 2.5rem;
+  }
+  #form input {
+    margin-bottom: 1.25rem;
+  }
+
+  #form p {
+    width: 100%;
+    text-align: center;
+  }
 }
