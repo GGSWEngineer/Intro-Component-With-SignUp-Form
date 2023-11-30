@@ -45,7 +45,13 @@
                 name="user_first_name"
                 placeholder="First Name"
               />
-              <img src="images/icon-error.svg" alt="icon error" />
+              <img
+                src="images/icon-error.svg"
+                alt="icon error"
+                class="icon-error first-name-error-icon"
+
+              />
+              <div class="error-message first-name-error">First Name cannot be empty</div>
             </div>
             <div class="input-container">
               <input
@@ -54,7 +60,12 @@
                 name="user_last_name"
                 placeholder="Last Name"
               />
-              <img src="images/icon-error.svg" alt="icon error" />
+              <img
+                src="images/icon-error.svg"
+                alt="icon error"
+                class="icon-error"
+              />
+              <div class="error-message last-name-error">Last Name cannot be empty</div>
             </div>
             <div class="input-container">
               <input
@@ -63,7 +74,12 @@
                 name="user_email"
                 placeholder="Email Address"
               />
-              <img src="images/icon-error.svg" alt="icon-error" />
+              <img
+                src="images/icon-error.svg"
+                alt="icon-error"
+                class="icon-error"
+              />
+              <div class="error-message email-error">Email cannot be empty</div>
             </div>
             <div class="input-container">
               <input
@@ -72,9 +88,14 @@
                 name="user_password"
                 placeholder="Password"
               />
-              <img src="images/icon-error.svg" alt="icon-error" />
+              <img
+                src="images/icon-error.svg"
+                alt="icon-error"
+                class="icon-error"
+              />
+              <div class="error-message password-error">Password cannot be empty</div>
             </div>
-            <button type="submit">Claim your free trial</button>
+            <button class="btn" type="submit">Claim your free trial</button>
             <p>
               By clicking the button, you are agreeing to our<span>
                 Terms and Services</span
