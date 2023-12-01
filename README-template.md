@@ -69,11 +69,15 @@ Users should be able to:
   opacity: 0.75; 
 }
 
+- kebab-case for naming classes and ID's
+
 
 ### Continued development
 
 - using the mix-blend-mode to get the image just the right shade is still an issue that takes me a while to fix(and still couldn't get it exactly right for this project)
 - continuing to get better at Javascript and implementing it with my HTML and CSS, every project I get a bit more comfortable and understand it a bit more
+- refactoring code and understanding how data is being moved from function to function
+
 
 ## Author
 

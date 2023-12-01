@@ -73,7 +73,7 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.form-n-btns .special:hover,
+/* .form-n-btns .special:hover, */
 #form button:hover {
   cursor: pointer;
 }
